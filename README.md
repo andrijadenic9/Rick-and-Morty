@@ -62,7 +62,18 @@ This is a React application designed as a test task to display information about
 
 ## Project Structure
 
-src/ ├── components/ # Reusable components (e.g., Button, Input, DataFetcher) ├── context/ # AuthContext for global authentication state ├── hooks/ # Custom hooks (e.g., useAuth, useSingleCharacter) ├── pages/ # Page components for each route ├── services/ # API services for fetching data ├── config/ # Configuration files (Firebase, API, etc.) └── types/ # TypeScript type definitions
+├── src                 # Root directory for all application source files
+│   ├── auth            # Contains route protection logic for private (authenticated) routes
+│   ├── components      # Reusable components like Button, Input, Heading, DataFetcher
+│   ├── config          # Configuration files, including Firebase and global settings
+│   ├── context         # AuthContext for managing global authentication state
+│   ├── hooks           # Custom hooks (e.g., useAuth, useSingleCharacter) for encapsulating logic
+│   ├── pages           # Page components for each route, like LoginPage, CharactersPage, etc.
+│   ├── services        # API services for fetching data from the Rick and Morty API and others
+│   ├── types           # TypeScript type definitions for strict data typing
+│   └── utils           # Utility functions, such as form validation
+└── ...
+
 
 ## Application Functionality
 
