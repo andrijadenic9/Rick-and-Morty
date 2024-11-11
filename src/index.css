@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .loader {
+        @apply border-4 border-gray-200 border-t-blue-500 rounded-full w-10 h-10;
+        animation: spin 1s linear infinite;
+    }
+
+    .card-hover {
+        @apply p-4 border rounded-lg shadow-md bg-white transition duration-200 ease-in-out transform hover:bg-gray-100 hover:scale-105;
+    }
+
+    .infinite-scroll-container {
+        @apply h-[90vh] overflow-y-auto;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
