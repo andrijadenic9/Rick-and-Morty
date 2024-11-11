@@ -62,6 +62,7 @@ This is a React application designed as a test task to display information about
 
 ## Project Structure
 
+```
 ├── src                 # Root directory for all application source files
 │   ├── auth            # Contains route protection logic for private (authenticated) routes
 │   ├── components      # Reusable components like Button, Input, Heading, DataFetcher
@@ -73,7 +74,7 @@ This is a React application designed as a test task to display information about
 │   ├── types           # TypeScript type definitions for strict data typing
 │   └── utils           # Utility functions, such as form validation
 └── ...
-
+```
 
 ## Application Functionality
 
